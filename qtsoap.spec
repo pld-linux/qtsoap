@@ -9,7 +9,12 @@ Source0:	http://ftp.icm.edu.pl/packages/qt/solutions/lgpl/%{name}-%{version}_1-o
 # Source0-md5:	3bb3c0ba836eccb94b6f75ba289b0213
 Patch0:		%{name}-2.7_1-opensource-install-pub-headers.patch
 URL:		http://qt.gitorious.org/qt-solutions/qt-solutions/trees/master/qtsoap
+BuildRequires:	QtGui-devel
+BuildRequires:	QtNetwork-devel
+BuildRequires:	QtXml-devel
 BuildRequires:	QtCore-devel
+BuildRequires:	qt4-build
+BuildRequires:	qt4-qmake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
