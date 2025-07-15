@@ -33,7 +33,7 @@ Development files for %{name}.
 %prep
 %setup -q -n %{name}-%{version}_1-opensource
 # headers are not installed for shared library
-%patch0 -p1
+%patch -P0 -p1
 
 sed -i 's:$$DESTDIR:%{_libdir}:g' buildlib/buildlib.pro
 
